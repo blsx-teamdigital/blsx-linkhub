@@ -1,0 +1,379 @@
+
+/*.brand-profile-card {
+  padding: 1.2rem;
+  color: #fff;
+  border-radius: 40px;
+  box-shadow: 0 30px 50px -10px rgba(4, 51, 255, 0.35);
+  background:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.4)),
+    var(--card-bg-image, none) center / cover no-repeat,
+    #1b2a66;
+}
+.brand-profile-card__frame {
+  padding: 2.2rem 1rem 1.2rem;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 28px;
+}
+.brand-profile-card__name {
+  margin: 0.3rem 0 0;
+  font-family: var(--font-heading);
+  font-size: 2.6rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+.brand-profile-card__tagline {
+  margin: 0.5rem 0 0;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.25;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.4);
+}
+.brand-profile-card__rule {
+  display: none;
+}
+.brand-profile-card__intro {
+  max-width: 24ch;
+  margin: 2rem auto 1.2rem;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 400;
+  opacity: 0.92;
+}
+
+.brand-avatar {
+  position: relative;
+  width: 190px;
+  height: 190px;
+  margin: 0 auto 0.6rem;
+  display: grid;
+  place-items: center;
+  border: 1px dashed rgba(255, 221, 0, 0.55);
+  border-radius: 50%;
+}
+.brand-avatar__circle {
+  width: 160px;
+  height: 160px;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+.brand-avatar__circle img {
+  width: 100%;
+  height: 100%;
+  padding: 14px;                 
+  object-fit: contain;
+}
+
+.brand-avatar__badge {
+  display: none;
+}
+
+
+.social-icon-list {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 0.6rem;
+  margin: 0 0 1.4rem;
+  padding: 0;
+  list-style: none;
+}
+.social-icon-list a {
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  font-size: 1.1rem;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  transition: background 0.2s, color 0.2s;
+}
+.social-icon-list a:hover {
+  color: var(--blue);
+  background: var(--yellow);
+}
+.social-icon-list a:focus-visible,
+.contact-action__link:focus-visible {
+  outline: 2px solid var(--yellow);
+  outline-offset: 2px;
+}
+
+
+.contact-action-bar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: left;
+  background: rgba(10, 18, 60, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+}
+.contact-action-bar > * + * {
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+}
+.contact-action {
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.3rem;
+  padding: 0.55rem 0.6rem;
+}
+.contact-action__link {
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #fff;
+  text-decoration: none;
+}
+.contact-action__link > i {
+  flex: none;
+  color: var(--yellow);
+  font-size: 1.2rem;
+}
+.contact-action__text {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.15;
+}
+.contact-action__text strong {
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.contact-action__text small {
+  overflow: hidden;
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  opacity: 0.9;
+}
+
+@media (max-width: 420px) {
+  .social-icon-list a {
+    width: 44px;
+    height: 44px;
+  }
+  .contact-action-bar {
+    grid-template-columns: 1fr;
+  }
+  .contact-action-bar > * + * {
+    border-left: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+  }
+}*/
+
+
+/* ---------- BrandProfileCard ---------- */
+.brand-profile-card {
+  padding: 1.2rem;
+  color: #fff;
+  border-radius: 40px;
+  box-shadow: 0 30px 50px -10px rgba(4, 51, 255, 0.35);
+  background:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.4)),
+    var(--card-bg-image, none) center / cover no-repeat,
+    #1b2a66;
+}
+.brand-profile-card__frame {
+  padding: 2.2rem 1rem 1.2rem;
+  text-align: center;
+  border: 1px solid transparent;
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.05);          /* CHANGED: 0.08 se 0.05 */
+  backdrop-filter: blur(2px);                      /* CHANGED: 6px se 2px */
+  -webkit-backdrop-filter: blur(2px);              /* CHANGED */
+}
+.brand-profile-card__name {
+  margin: 0.3rem 0 0;
+  font-family: var(--font-heading);
+  font-size: 2.6rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+.brand-profile-card__tagline {
+  margin: 0.5rem 0 0;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.25;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.4);
+}
+/* Reference has no yellow divider */
+.brand-profile-card__rule {
+  display: none;
+}
+.brand-profile-card__intro {
+  max-width: 24ch;
+  margin: 2rem auto 1.2rem;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 400;
+  opacity: 0.92;
+}
+
+/* ---------- BrandAvatar ---------- */
+.brand-avatar {
+  position: relative;
+  width: 190px;
+  height: 190px;
+  margin: 0 auto 0.6rem;
+  display: grid;
+  place-items: center;
+  border: 1px solid transparent;
+  border-radius: 50%;
+}
+.brand-avatar__circle {
+  width: 160px;
+  height: 160px;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+.brand-avatar__circle img {
+  width: 100%;
+  height: 100%;
+  padding: 1.5rem;
+  object-fit: contain;
+}
+
+.brand-avatar__badge {
+  display: none;
+}
+
+/* ---------- SocialIconList ---------- */
+.social-icon-list {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 0.6rem;
+  margin: 0 0 1.4rem;
+  padding: 0;
+  list-style: none;
+}
+.social-icon-list a {
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  font-size: 1.1rem;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(2px);                      /* CHANGED: 4px se 2px */
+  -webkit-backdrop-filter: blur(2px);              /* CHANGED */
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  transition: background 0.2s, color 0.2s;
+}
+.social-icon-list a:hover {
+  color: var(--blue);
+  background: var(--yellow);
+}
+.social-icon-list a:focus-visible,
+.contact-action__link:focus-visible {
+  outline: 2px solid var(--yellow);
+  outline-offset: 2px;
+}
+
+/* ---------- ContactActionBar ---------- */
+.contact-action-bar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: left;
+  background: rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(3px);                      /* CHANGED: 8px se 3px */
+  -webkit-backdrop-filter: blur(3px);              /* CHANGED */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+}
+.contact-action-bar > * + * {
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+}
+.contact-action {
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.3rem;
+  padding: 0.55rem 0.6rem;
+}
+.contact-action__link {
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #fff;
+  text-decoration: none;
+}
+.contact-action__link > i {
+  flex: none;
+  color: var(--yellow);
+  font-size: 1.2rem;
+}
+.contact-action__text {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.15;
+}
+.contact-action__text strong {
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.contact-action__text small {
+  overflow: hidden;
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  opacity: 0.9;
+}
+
+/* ---------- Theme toggle (sun / moon) ---------- */
+button.theme-mode-switch {
+  width: 44px;
+  height: 44px;
+  font-size: 1.1rem;
+  border-width: 1px;                              
+}
+button.theme-mode-switch i {
+  font-size: 1.1rem;
+  line-height: 1;
+  color: #F25555;
+   
+}
+
+@media (max-width: 420px) {
+  .social-icon-list a {
+    width: 44px;
+    height: 44px;
+  }
+  .contact-action-bar {
+    grid-template-columns: 1fr;
+  }
+  .contact-action-bar > * + * {
+    border-left: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  button.theme-mode-switch {
+    width: 40px;
+    height: 40px;
+  }
+}

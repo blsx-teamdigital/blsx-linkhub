@@ -1,2 +1,7 @@
 # blsx-linkhub
-this is just short info our company i.e. all in one 
+
+All-in-one link hub for our company.
+
+## Run locally
+npm install
+npm run dev

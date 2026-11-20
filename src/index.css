@@ -1,0 +1,266 @@
+/*:root {
+  --text: #6b6375;
+  --text-h: #08060d;
+  --bg: #fff;
+  --border: #e5e4e7;
+  --code-bg: #f4f3ec;
+  --accent: #aa3bff;
+  --accent-bg: rgba(170, 59, 255, 0.1);
+  --accent-border: rgba(170, 59, 255, 0.5);
+  --social-bg: rgba(244, 243, 236, 0.5);
+  --shadow:
+    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+
+  font: 18px/145% var(--sans);
+  letter-spacing: 0.18px;
+  color-scheme: light dark;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #9ca3af;
+    --text-h: #f3f4f6;
+    --bg: #16171d;
+    --border: #2e303a;
+    --code-bg: #1f2028;
+    --accent: #c084fc;
+    --accent-bg: rgba(192, 132, 252, 0.15);
+    --accent-border: rgba(192, 132, 252, 0.5);
+    --social-bg: rgba(47, 48, 58, 0.5);
+    --shadow:
+      rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
+  }
+
+  #social .button-icon {
+    filter: invert(1) brightness(2);
+  }
+}
+
+body {
+  margin: 0;
+}
+
+#root {
+  width: 1126px;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  border-inline: 1px solid var(--border);
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+h1,
+h2 {
+  font-family: var(--heading);
+  font-weight: 500;
+  color: var(--text-h);
+}
+
+h1 {
+  font-size: 56px;
+  letter-spacing: -1.68px;
+  margin: 32px 0;
+  @media (max-width: 1024px) {
+    font-size: 36px;
+    margin: 20px 0;
+  }
+}
+h2 {
+  font-size: 24px;
+  line-height: 118%;
+  letter-spacing: -0.24px;
+  margin: 0 0 8px;
+  @media (max-width: 1024px) {
+    font-size: 20px;
+  }
+}
+p {
+  margin: 0;
+}
+
+code,
+.counter {
+  font-family: var(--mono);
+  display: inline-flex;
+  border-radius: 4px;
+  color: var(--text-h);
+}
+
+code {
+  font-size: 15px;
+  line-height: 135%;
+  padding: 4px 8px;
+  background: var(--code-bg);
+}
+(/
+
+
+/* ---------- Design tokens ---------- */
+:root {
+  --blue: #0433ff;
+  --navy: #0b1030;
+  --yellow: #ffdd00;
+  --muted: #6b7694;
+  --tint: #e8ecff;
+  --card: #ffffff;
+  --bg-from: #dfeaff;
+  --bg-to: #f3f7ff;
+
+  --radius-md: 24px;
+  --radius-lg: 28px;
+
+  --font-body: 'Public Sans', system-ui, sans-serif;
+  --font-heading: 'Inter', system-ui, sans-serif;
+}
+
+[data-bs-theme='dark'] {
+  --navy: #f2f5ff;
+  --muted: #98a3c7;
+  --tint: #22305c;
+  --card: #151f3d;
+  --bg-from: #0a1124;
+  --bg-to: #0e1730;
+}
+
+/* ---------- Base ---------- */
+body {
+  min-height: 100vh;
+  font-family: var(--font-body);
+  color: var(--navy);
+  background: linear-gradient(135deg, var(--bg-from), var(--bg-to) 55%, var(--bg-from));
+}
+
+.page-title {
+  margin: 0 0 1.5rem;
+  font-family: var(--font-heading);
+  font-size: clamp(2.4rem, 5vw, 4.2rem);
+  font-weight: 700;
+  line-height: 1;
+}
+
+/* ---------- ui-kit: IconBadge ---------- */
+.icon-badge {
+  flex: none;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--tint);
+  color: var(--blue);
+}
+.icon-badge--md {
+  width: 64px;
+  height: 64px;
+  font-size: 1.5rem;
+}
+.icon-badge--lg {
+  width: 60px;
+  height: 60px;
+  font-size: 1.6rem;
+  background: #fff;
+}
+[data-bs-theme='dark'] .icon-badge--md {
+  color: #8fa6ff;
+}
+
+/* ---------- ui-kit: ArrowLinkButton ---------- */
+.arrow-link-button {
+  flex: none;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  color: var(--blue);
+}
+.arrow-link-button--md {
+  width: 54px;
+  height: 54px;
+  font-size: 0.95rem;
+  border: 1.5px solid var(--yellow);
+  background: rgba(255, 221, 0, 0.12);
+}
+.arrow-link-button--lg {
+  width: 104px;
+  height: 104px;
+  font-size: 1.3rem;
+  background: var(--yellow);
+}
+[data-bs-theme='dark'] .arrow-link-button--md {
+  color: var(--yellow);
+}
+
+/* ---------- ui-kit: CopyValueButton ---------- */
+.copy-value-button {
+  padding: 0.25rem;
+  border: 0;
+  background: none;
+  color: var(--yellow);
+  font-size: 0.8rem;
+}
+.copy-value-button:focus-visible,
+.theme-mode-switch:focus-visible {
+  outline: 3px solid var(--blue);
+  outline-offset: 3px;
+}
+
+/* ---------- ui-kit: ThemeModeSwitch ---------- */
+.theme-mode-switch {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 10;
+  width: 62px;
+  height: 62px;
+  display: grid;
+  place-items: center;
+  border: 0;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 1.5rem;
+  background: linear-gradient(135deg, #8fa6ff, #b9c6ff);
+  box-shadow: 0 10px 24px rgba(80, 100, 220, 0.35);
+}
+
+/* ---------- Mobile ---------- */
+@media (max-width: 767.98px) {
+  .icon-badge--lg {
+    width: 64px;
+    height: 64px;
+    font-size: 1.6rem;
+  }
+  .arrow-link-button--lg {
+    width: 52px;
+    height: 52px;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .theme-mode-switch {
+    top: 12px;
+    right: 12px;
+    width: 46px;
+    height: 46px;
+    font-size: 1.1rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+  }
+}
