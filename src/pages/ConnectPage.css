@@ -1,0 +1,54 @@
+/* ---------- Page shell ---------- */
+.connect-page {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: clamp(1.5rem, 3vw, 3rem) clamp(1rem, 3vw, 2.5rem);
+}
+
+/* Left card : right content = about 1 : 2 (480px : 936px in the reference) */
+.connect-page__layout {
+  display: grid;
+  grid-template-columns: minmax(320px, 480px) minmax(0, 1fr);
+  gap: clamp(1.5rem, 3vw, 3rem);
+  align-items: start;
+}
+
+.connect-page__profile {
+  position: sticky;
+  top: 1.5rem;
+}
+
+.connect-page__content {
+  min-width: 0;
+}
+
+.connect-page__title {
+  margin: 0 0 1.2rem;
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 3.4vw, 3.4rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+  color: var(--navy);
+  text-align: center;  
+}
+
+.connect-page__featured {
+  margin-bottom: 1.75rem;
+}
+
+/* ---------- Tablet and mobile: stack ---------- */
+@media (max-width: 991.98px) {
+  .connect-page__layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .connect-page__profile {
+    position: static;
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+  .connect-page__title {
+    text-align: center;
+  }
+}
